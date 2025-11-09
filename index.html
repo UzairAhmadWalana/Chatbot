@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Botpress Chatbot Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 { text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Chat with My Botpress Bot!</h1>
+
+  <!-- Botpress Webchat -->
+  <script src="http://localhost:3000/assets/modules/channel-web/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      host: "http://localhost:3000",   // Botpress server URL
+      botId: "mychatbot",             // Replace with your bot’s ID from Botpress dashboard
+      extraStylesheet: "http://localhost:3000/assets/modules/channel-web/styles.css"
+    });
+  </script>
+</body>
+</html>
